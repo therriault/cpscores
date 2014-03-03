@@ -10,12 +10,12 @@ log using btt_gss_01_prep.log, replace
 *  Author:     	Andrew Therriault		
 *  Purpose:    	Prepares GSS 2006 data for replication	
 *  Data In:     gss_data.dta (from combined GSS file, but includes only 
-*				2006 respondents and relevant variables)
-*				gss_recodes.dta (original, contains old and new
-*				variable codings for each variable)
+*			2006 respondents and relevant variables)
+*		gss_recodes.dta (original, contains old and new
+*			variable codings for each variable)
 *  Data Out:    gss_prepped.dta
 *  Log File:    btt_gss_01_prep.log
-*  Status:		Final	
+*  Status:	Final	
 *  Machine:     AMT-Thinkpad2	
 *************************************************************************
 
