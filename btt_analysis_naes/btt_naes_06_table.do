@@ -11,7 +11,7 @@ log using btt_naes_06_table.log, replace
 *  Data In:     naes_withcp.dta	      	  		
 *  Data Out:    naes_groups.csv							
 *  Log File:    btt_naes_06_table.log                                           
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
@@ -23,7 +23,7 @@ keep if mi_m == 1
 keep dem* cp_score beh_vote ckey
 
 ************************************************************************
-*   Creating dummy variables for 10 polarized demographic groups
+*   	Creating dummy variables for 10 polarized demographic groups
 ************************************************************************
 
 tabulate dem_guns, gen(c_gun)
@@ -51,7 +51,7 @@ rename c_chu1 d_non
 rename c_edu5 d_edu
 
 ************************************************************************
-*   Looping over all combinations of these groups to create indicator
+*   	Looping over all combinations of these groups to create indicator
 *	variables as well as expectations for whether the groups are 
 *	cross-pressured or not
 ************************************************************************
@@ -116,7 +116,7 @@ while "`var1'" ~= "" {
 keep cp_score beh_vote ckey i* e*
 
 ************************************************************************
-*   Generating table contents
+*   	Generating table contents
 ************************************************************************
 
 *** Calculating CP score percentiles
@@ -141,7 +141,7 @@ replace cp_score = round(cp_score, 0.001)
 replace cp_pct = round(cp_pct, 0.1)
 
 ************************************************************************
-*   Saving and Closing								
+*   	Saving and Closing								
 ************************************************************************
 
 outsheet using naes_groups.csv, comma replace
