@@ -8,15 +8,15 @@ log using btt_naes_01_merge.log, replace
 *  Date:       	March 2, 2014						
 *  Author:     	Andrew Therriault			               	
 *  Purpose:    	Merges NAES 2004 cross-sectional and panel data, along	
-*				with an original dataset of state-level controls, for
-*				replication code
+*			 with an original dataset of state-level controls, for
+*			replication code
 *  Data In:     naes_data.dta (merged file of 2004 NAES rolling 
-*				cross-section (n=81,422) and general election panel
-*				(n=8,664), trimmed to variables for this analysis
-*				2004_state_controls.dta	(original data)				
+*			cross-section (n=81,422) and general election panel
+*			(n=8,664), trimmed to variables for this analysis
+*		2004_state_controls.dta	(original data)				
 *  Data Out:    naes_merged.dta	
 *  Log File:    btt_naes_01_merge.log		                           
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2
 ************************************************************************
 
