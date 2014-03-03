@@ -12,7 +12,7 @@ log using btt_naes_04_figures.log, replace
 *  Data In:     naes_withcp.dta	      	  		
 *  Data Out:    None							
 *  Log File:    btt_naes_04_figures.log	                                    
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2					
 ************************************************************************
 
