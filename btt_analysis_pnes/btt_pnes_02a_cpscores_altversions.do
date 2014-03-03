@@ -11,17 +11,17 @@ log using btt_pnes_02a_cpscores_altversions.log, replace
 *  Data In:     pnes_prepped.dta		     	  		
 *  Data Out:    None				
 *  Log File:    btt_pnes_02a_cpscores_altversions.log		                                                
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
 use pnes_prepped.dta
 
 ************************************************************************
-*   Running MNL of vote choice and creating probabilities--4 PARTIES		
+*   	Running MNL of vote choice and creating probabilities--4 PARTIES		
 ************************************************************************
 
-***Running mlogit analysis
+*** Running mlogit analysis
 
 mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_student ///
 	dem_retired dem_govt dem_selfemployed dem_manager dem_income dem_income2  ///
@@ -29,16 +29,16 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 	if (beh_vc == 1 | beh_vc == 7 | beh_vc == 4 | beh_vc == 5)  ///
 	& (_mi_m ~= 0), iter(500)
 
-***Calculating predicted probabilities
+*** Calculating predicted probabilities
 
 predict p4_1-p4_4, pr
 
 
 ************************************************************************
-*   Running MNL of vote choice and creating probabilities--5 PARTIES		
+*   	Running MNL of vote choice and creating probabilities--5 PARTIES		
 ************************************************************************
 
-***Running mlogit analysis
+*** Running mlogit analysis
 
 mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_student  ///
 	dem_retired dem_govt dem_selfemployed dem_manager dem_income dem_income2  ///
@@ -47,15 +47,15 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 	beh_vc == 6)  ///
 	& (_mi_m ~= 0), iter(500)
 
-***Calculating predicted probabilities
+*** Calculating predicted probabilities
 
 predict p5_1-p5_5, pr
 
 ************************************************************************
-*   Running MNL of vote choice and creating probabilities--6 PARTIES		
+*    	Running MNL of vote choice and creating probabilities--6 PARTIES		
 ************************************************************************
 
-***Running mlogit analysis
+*** Running mlogit analysis
 
 mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_student  ///
 	dem_retired dem_govt dem_selfemployed dem_manager dem_income dem_income2  ///
@@ -64,15 +64,15 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 	beh_vc == 6 | beh_vc == 10)  ///
 	& (_mi_m ~= 0), iter(500)
 
-***Calculating predicted probabilities
+*** Calculating predicted probabilities
 
 predict p6_1-p6_6, pr
 
 ************************************************************************
-*   Running MNL of vote choice and creating probabilities--7 PARTIES		
+*   	Running MNL of vote choice and creating probabilities--7 PARTIES		
 ************************************************************************
 
-***Running mlogit analysis
+*** Running mlogit analysis
 
 mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_student  ///
 	dem_retired dem_govt dem_selfemployed dem_manager dem_income dem_income2  ///
@@ -81,15 +81,15 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 	beh_vc == 6 | beh_vc == 10 | beh_vc == 2)  ///
 	& (_mi_m ~= 0), iter(500)
 
-***Calculating predicted probabilities
+*** Calculating predicted probabilities
 
 predict p7_1-p7_7, pr
 
 ************************************************************************
-*   Running MNL of vote choice and creating probabilities--8 PARTIES		
+*   	Running MNL of vote choice and creating probabilities--8 PARTIES		
 ************************************************************************
 
-***Running mlogit analysis
+*** Running mlogit analysis
 
 mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_student  ///
 	dem_retired dem_govt dem_selfemployed dem_manager dem_income dem_income2  ///
@@ -98,13 +98,13 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 	beh_vc == 6 | beh_vc == 10 | beh_vc == 2 | beh_vc == 3) ///
 	& (_mi_m ~= 0), iter(500)
 
-***Calculating predicted probabilities
+*** Calculating predicted probabilities
 
 predict p8_1-p8_8, pr
 
 
 ************************************************************************
-*   Calculating full variance, first differences, and top-3 variance
+*	Calculating full variance, first differences, and top-3 variance
 *	CPs for each individual 					
 ************************************************************************
 
