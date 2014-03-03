@@ -11,14 +11,14 @@ log using btt_naes_02_prep.log, replace
 *  Data In:     naes_merged.dta	       	  		
 *  Data Out:    naes_prepped.dta				
 *  Log File:    btt_naes_02_prep.log                                
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
 use naes_merged.dta
 
 ************************************************************************
-*   Recoding idates	and making splines
+*   	Recoding idates and making splines
 ************************************************************************
 
 tostring cdate, replace
@@ -27,7 +27,7 @@ gen days = date("20041102","YMD") - idate
 mkspline sdays1 15 sdays2 30 sdays3 60 sdays4 120 sdays5 = days
 
 ************************************************************************
-*   Recoding demographics - Preelection				
+*   	Recoding demographics - Preelection				
 ************************************************************************
 
 gen dem_female = .
@@ -180,7 +180,7 @@ replace dem_gays = 1 if cwg05 == 1
 replace dem_gays = 1 if cwg05 == 3
 
 ************************************************************************
-*   Recoding behavior variables	(using post-election values when 
+*   	Recoding behavior variables	(using post-election values when 
 *	available, pre-election otherwise)			
 ************************************************************************
 
@@ -477,8 +477,8 @@ tab1 know_scale, missing
 ************************************************************************
 *   	Recoding control variables 
 *
-*		(Controls are later imputed for use as IVs, and are kept
-*		distinct from non-imputed versions which are used as DVs)	
+*	(Controls are later imputed for use as IVs, and are kept
+*	distinct from non-imputed versions which are used as DVs)	
 ************************************************************************
 
 gen control_therm_bush = therm_bush
