@@ -1,0 +1,63 @@
+
+
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+**											       **
+**	Replication notes for "Cross Pressure Scores" (Brader, Tucker, and Therriault, 2014)   **
+**	For more information, please contact Andrew Therriault at andrew.therriault@gmail.com  **
+**	Last modified: March 2, 2014, Andrew Therriault					       **
+**											       **
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+
+SUMMARY:
+
+This folder contains replication data for "Cross Pressure Scores: An Individual-Level Measure of Cumulative Partisan Pressures Arising from Social Group Memberships", by Ted Brader, Joshua A. Tucker, and Andrew Therriault, published in Political Behavior, March 2014, Volume 36, Issue 1, pp 23-51.
+
+************
+
+ABOUT THE DATA:
+
+Each of the analysis folders contains an original (unrecoded) datafile cropped to just the variables used in our analyses. These files are solely included for the purpose of replication, and should not be used for any other analyses. If you wish to use these datasets for your own research, we ask that you obtain them from their original sources and abide by the applicable terms of use for those datasets. More information on those datasets can be found at the following sites:
+
+--http://www.annenbergpublicpolicycenter.org/naes/
+--http://www3.norc.org/gss+website/
+--http://www.ads.org.pl/opis-szczegE.php?v=E&id=23
+
+************
+
+ABOUT THE CODE:
+
+Three main analyses were included in the paper, using the 2004 NAES, 2006 GSS, and 2001 PNES datasets. All of the code necessary to replicate the tables and figures in the paper is included in this archive. Please contact authors for code related to additional tests discussed in the text or online appendix but not presented in the papers's tables and figures.  
+
+All of analyses included in this archive were conducted in Stata. In order to run this code, users will need version 11 or higher, and may be required to install additional Stata packages, including the following:
+
+--hotdeckvar (use command "findit hotdeckvar" to install)
+--dropmiss (use command "findit dropmiss" to install)
+
+If you run into complications reproducing our results, please contact us for assistance. 
+
+************
+
+NOTES ON MISSING DATA IMPUTATION:
+
+Because of randomness in the missing data imputation steps of these analyses (the randomization in the "hotdeckvar" package used for handling lightly-missing data appears not to be fixed by setting Stata's seed value), there may be very slight variation in your results from those in the published paper. If you find discrepancies of substantial magnitude, please contact us.
+
+************
+
+NOTES ON MODELS USED:
+
+Because of limitations in Stata's marginal effects and prediction commands at the time of the paper's original coding, some parts of the code have two versions of the same model---one which uses the "mi" command (used to produce the tables of regression results), and a second which uses the standard model commands across the imputed datasets (used for calculating margins). Both approaches produce coefficient estimates which are effectively equivalent, but the latter produces attenuated standard errors, and so is only appropriate for calculating marginal effect magnitudes (which are presented without errors attached) and raw predicted probabilities for CP score calculation (which, in the standard version, does not incorporate error estimates into final scores).
+
+
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+**											       **
+**	For more information, please contact Andrew Therriault at andrew.therriault@gmail.com  **
+**											       **
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
