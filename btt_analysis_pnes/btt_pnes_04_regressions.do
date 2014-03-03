@@ -1,16 +1,16 @@
 clear
 log close _all
 
-log using btt_pnes_05_regressions.log, replace
+log using btt_pnes_04_regressions.log, replace
 
 ************************************************************************
-*  File-Name:	btt_pnes_05_regressions.do        			
+*  File-Name:	btt_pnes_04_regressions.do        			
 *  Date:       	March 2, 2014						
 *  Author:     	Andrew Therriault			               	
 *  Purpose:    	Runs regressions of turnout, & interest for replication
 *  Data In:     pnes_withcp.dta		     	  		
 *  Data Out:    None							
-*  Log File:    btt_pnes_05_regressions.log	                                            
+*  Log File:    btt_pnes_04_regressions.log	                                            
 *  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
