@@ -8,11 +8,11 @@ log using btt_naes_05_regressions.log, replace
 *  Date:       	March 2, 2014
 *  Author:     	Andrew Therriault			               	
 *  Purpose:    	Runs regressions of behavior variables on models with	
-*				CP scores for replication					
+*			CP scores for replication					
 *  Data In:     naes_withcp.dta	            		
 *  Data Out:    None							
 *  Log File:    btt_naes_05_regressions.log			                                                 
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2
 ************************************************************************
 
