@@ -11,14 +11,14 @@ log using btt_pnes_02_cpscores.log, replace
 *  Data In:     pnes_prepped.dta		     	  		
 *  Data Out:    pnes_withcp.dta					
 *  Log File:    btt_pnes_02_cpscores.log				
-*  Status:		Final
+*  Status:	Final
 *  Machine:     AMT-Thinkpad2
 ************************************************************************
 
 use pnes_prepped.dta
 
 ************************************************************************
-*   Running MNL of vote choice on demographics			
+*   	Running MNL of vote choice on demographics			
 *	then using it to predict party probabilities (7 parties)		
 ************************************************************************
 
@@ -44,7 +44,7 @@ mlogit beh_vc dem_female dem_age dem_age2 dem_educ dem_educ2 dem_unemployed dem_
 predict p_1-p_7, pr
 
 ************************************************************************
-*   Calculating full variance CP scores for each individual 					
+*   	Calculating full variance CP scores for each individual 					
 ************************************************************************
 
 egen cp_full = rsd(p_*)
@@ -64,7 +64,7 @@ replace cp_full = 1 - cp_full
 sum cp_full if (_mi_m ~= 0)
 
 ************************************************************************
-*   Calculating first differences and top-3 variance versions 					
+*   	Calculating first differences and top-3 variance versions 					
 ************************************************************************
 
 *** Calculating Ordered Probabilities	
