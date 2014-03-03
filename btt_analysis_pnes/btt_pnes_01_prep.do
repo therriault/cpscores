@@ -10,10 +10,10 @@ log using btt_pnes_01_prep.log, replace
 *  Author:     	Andrew Therriault			               	
 *  Purpose:    	Prepares PNES 2001 data	for replication			
 *  Data In:     pnes_data.dta (2001 PNES survey, trimmed to relevant
-*				variables for this analysis only)
+*			variables for this analysis only)
 *  Data Out:    pnes_prepped.dta					
 *  Log File:    btt_pnes_01_prep.log				
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
@@ -97,7 +97,7 @@ replace beh_interest = 2 if intpo011 == 4
 replace beh_interest = 1 if intpo011 == 5
 
 ************************************************************************
-*   Generating "control" versions of behaviors (which allow for MI,	
+*   	Generating "control" versions of behaviors (which allow for MI,	
 *	but don't want imputed values when used as DV)			
 ************************************************************************
 
