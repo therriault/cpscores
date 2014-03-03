@@ -11,7 +11,7 @@ log using btt_pnes_05_regressions.log, replace
 *  Data In:     pnes_withcp.dta		     	  		
 *  Data Out:    None							
 *  Log File:    btt_pnes_05_regressions.log	                                            
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
