@@ -12,7 +12,7 @@ log using btt_pnes_04_figures.log, replace
 *  Data In:     pnes_withcp.dta		     	  					
 *  Data Out:    None													
 *  Log File:    btt_pnes_04_figures.log				                                            
-*  Status:		Final		                    			       		
+*  Status:	Final		                    			       		
 *  Machine:     AMT-ThinkPad2											
 ************************************************************************
 
@@ -36,29 +36,28 @@ graph export poland_overall.wmf, replace
 ************************************************************************
 *	Creating summary figures by group								
 *																		
-*		NOTES:															
+*	NOTES:															
 *																		
-*		For sample size reasons, I use above and below median income 	
-*		instead of more extreme thresholds of wealthy / poor			
+*	For sample size reasons, I use above and below median income 	
+*	instead of more extreme thresholds of wealthy / poor			
 *																		
-*		Young = 50 and under, old = over 50, can't be more precise b/c	
-*		self-employment already narrows samples considerably, and that	
-*		is especially true for those at the extremes (who may be 		
-*		students or retirees)											
+*	Young = 50 and under, old = over 50, can't be more precise b/c	
+*	self-employment already narrows samples considerably, and that	
+*	is especially true for those at the extremes (who may be 		
+*	students or retirees)											
 *																		
-*		High education completed secondary, low education only 			
-*		elementary---middle category is some secondary or vocational	
+*	High education completed secondary, low education only 			
+*	elementary---middle category is some secondary or vocational	
 *																		
-*		Religious is weekly churchgoers									
+*	Religious is weekly churchgoers									
 *																		
-*		Urban means town/city is 50k+
+*	Urban means town/city is 50k+
 *																		
 ************************************************************************
 
 *** Limiting to original dataset (so no imputed demos) for group-level
 mi unset
 keep if mi_m == 0
-
 
 gen wealthy = (dem_income >= .117)
 gen young = (dem_age <= 50)
