@@ -11,15 +11,15 @@ log using btt_gss_02_cpscores.log, replace
 *  Data In:     gss_prepped.dta
 *  Data Out:    gss_withcp.dta
 *  Log File:    btt_gss_02_cpscores.log	
-*  Status:		Final
+*  Status:	Final
 *  Machine:     AMT-Thinkpad2	
 *************************************************************************
 
 use gss_prepped.dta, clear
 
 *************************************************************************
-*   Running logit of vote choice on demographics
-*   then calculating party probabilities based on vote choice
+*   	Running logit of vote choice on demographics
+*   	then calculating party probabilities based on vote choice
 *
 *	(note: using standard logit over all MI-imputed datasets, in order 
 *	to facilitate straightforward prediction.)
