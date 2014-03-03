@@ -11,7 +11,7 @@ log using btt_naes_03_cpscores.log, replace
 *  Data In:     naes_prepped.dta	       	  		
 *  Data Out:    naes_withcp.dta				
 *  Log File:    btt_naes_03_cpscores.log	                                        
-*  Status:		Final		                           		
+*  Status:	Final		                           		
 *  Machine:     AMT-Thinkpad2						
 ************************************************************************
 
